@@ -1,9 +1,16 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .center {
     justify-content: center;
 }
 
 .card {
-    max-width: 600px;
+    font-size: 18px;
+    max-width: 620px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }

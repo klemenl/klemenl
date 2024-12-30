@@ -1,210 +1,162 @@
 <!doctype html>
 <html>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48138961-4"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-48138961-4');
-    </script>
-
     <title>Klemen Lilija</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name = "description" content = "Personal website of Klemen Lilija." />
-    <meta name = "keywords" content = "User Experience, Virtual Reality, Internet of Things, ACM, Human-Computer Interaction" />
+    <meta name = "description" content = "Klemen Lilija, Product Designer" />
+    <meta name = "keywords" content = "Product Design, User Experience, Virtual Reality, Augmented Reality, Mixed Reality, Consumer Audio, Internet of Things, ACM, Human-Computer Interaction" />
     
-    <!-- Kube CSS -->
-    <link rel="stylesheet" href="css/kube.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/custom.css"/>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
+    
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="page">
-        <header class="header">              
-            <div class="is-navbar-container">
-                <div class="is-center">
-                    <!-- collapsable navigation -->
-                    <div id="navbar-demo" class="is-navbar is-hidden-mobile">
-                        <nav class="is-push-right">
-                            <ul>
-                                <li><h2>Klemen Lilija</h2   ></li>
-                                <li><a href="index.html">Bio</a></li>
-                                <li><a href="index.html#projects">Projects</a></li>
-                                <li><a href="index.html#publications">Publications</a></li>
-                                <li><a href="index.html#contact">Contact</a></li>
-                            </ul>
-                            </ul>
-                        </nav>
+    <div class="uk-container uk-container-xsmall ">
+        
+        <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="img/profile-photo-large.png" uk-img></div>
+        
+        <div class="uk-margin">
+        <p>
+        Hi, I am a User Experience Designer and Engineer with a background in <a href="https://scholar.google.de/citations?user=jRL1q80AAAAJ">human-computer interaction research</a>.
+        I am currently at <a href="https://teufel.de/">Lautsprecher Teufel</a>, where I work on consumer audio products such as <a href="https://teufel.de/stereo-m-2-106483000">wifi speakers</a>, <a href="https://teufel.de/zola-106496000">gaming headphones</a> and <a href="https://teufel.de/cinebar-lux-105801000">soundbars</a>.
+        Some of my daily activities are conducting user research, prototyping of physical and digital features, collaborating with engineering and product teams, and creating UX design specifications.
+        </p>
+        </div>
+
+        <div uk-slideshow="animation: fade">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                <div class="uk-slideshow-items">
+                    <div>
+                        <img src="img/teufel-stereo-m-2.jpg" alt="Teufel Stereo M 2 speaker" uk-cover>
                     </div>
-                </div>
-            </div>
-        </header>
+                    <div>
+                        <img src="img/teufel-zola-01.jpg" alt="Teufel Zola headphones" uk-cover>
+                    </div>
+                    <div>
+                        <img src="img/teufel-zola-02.png" alt="Teufel Zola Windows application" uk-cover>
+                    </div>
+                    <div>
+                        <img src="img/teufel-lux.jpg" alt="Teufel Cinebar LUX soundbar" uk-cover>
+                    </div>
+                </div>        
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>        
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        </div>
 
-        <main class="main">
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <img src="img/profile-photo.jpg" alt="profile photo">
-                    <p>I am a PhD Fellow at the <a href='https://di.ku.dk/english/'>Department of Computer Science</a> at University of Copenhagen.
-                        I research within the field of human-computer interaction with a focus on virtual and augmented reality. I’m part of the 
-                        <a href='http://www.body-ui.eu/'>BodyUI</a>, a European Research Council project, working under the supervision of
-                        <a href='https://www.kasperhornbaek.dk/'>Kasper Hornbæk</a>.</p>
-                    <p>Recently I interned at the <a href='https://hpi.de/'>Hasso Plattner Institute</a> at the Human Computer Interaction Lab
-                        headed by <a href='https://www.patrickbaudisch.com/'>Patrick Baudisch</a>.</p>
-                    <p>Previously I’ve worked on prototyping and deploying industrial internet of things products for <a href='https://relayr.io/'>relayr</a>.
-                        I received my MSc from the <a href='https://www.kth.se/en'>KTH Stockholm</a> and <a href='https://www.tu.berlin/en/'>TU Berlin</a>.
-                        My MSc thesis, Interaction with Transparent Displays, was completed under the supervision of <a href='http://joergmueller.info/'>Jörg Müller</a>, 
-                        <a href='https://www.davidlindlbauer.com/'>David Lindlbauer</a>, and <a href='http://www.rwalter.de/'>Robert Walter</a>.</p>     
-                    <p>You can contact me via klemen.lilija[at]gmail.com.</p>
-                </div>
-            </div>
+        <div class="uk-margin">
+        <p>
+        Previously, I completed my PhD at <a href="https://di.ku.dk/english/">Department of Computer Science</a> at University of Copenhagen.
+        I researched within the field of human-computer interaction with a focus on virtual and augmented reality. 
+        Among other things, I researched portal-based interaction techniques, navigation of spatial recordings, and learning of motor skills by autocorrecting users virtual movement. 
+        You can find the list of my publications at the end of the page.
+        </P>
+        </div>
 
-            <div id="projects" class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h2>Projects</h2>
-                </div>
-            </div>
+        <div uk-slideshow="animation: fade">
+            <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">        
+                <div class="uk-slideshow-items">
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/vFlK2nNNK4s?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-cover></iframe>
+                    </div>
+                    <div>
+                        <img src="img/who-put-that-there.png" alt="Who Put That There paper teaser" uk-cover>
+                    </div>
+                    <div>
+                        <img src="img/correction-of-avatars-movement.png" alt="Correction of Avatar Movements results figure" uk-cover>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/uz3ep3yAm6E?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-cover></iframe>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/OATMC0odHrE?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-cover></iframe>
+                    </div>
+                </div>        
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>        
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        </div>
+        
+        <div class="uk-margin">
+        <p>
+        In the past, I also worked at <a href="https://www.relayr.io/">relyr</a> where I developed and deployed industrial IoT solutions.
+        For example, I worked on a IoT sensor kit and dashboard for monitoring trains and clocks at DB train stations.  
+        </p>
+        </div>
 
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h3>Augmented Reality Views For Ocluded Interaction</h3>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uz3ep3yAm6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>We rely on our sight when manipulating objects. When objects are occluded, manipulation becomes difficult. Such occluded objects can 
-                        be shown via augmented reality to re-enable visual guidance. However, it is unclear how to do so to best support object manipulation. 
-                        We compare four views of occluded objects and their effect on performance and satisfaction across a set of everyday manipulation tasks 
-                        of varying complexity. You can see the video presentation here: <a href='https://www.youtube.com/watch?v=nxf6xW_z_s4'>ACM CHI19 Glasgow</a>.</p>
-                </div>
-            </div>
+        <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="img/train-monitoring.jpg" uk-img>
+        </div>
+        
+        <div class="uk-margin">
+        <p>
+        In my spare time I enjoy reading about latest technologies, creating mixed-reality experiences, and tinkering with arduino.
+        </p>
+        </div>
 
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h3> Temporal Navigation of Spatial Recordings by Direct Manipulation</h3>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KlKw6ryRT_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>Spatial recordings allow viewers to move within them and freely choose their viewpoint. However, such recordings make it easy to miss 
-                        events and difficult to follow moving objects when skipping through the recording. To alleviate these problems we present the Who Put 
-                        That There system that allows users to navigate through time by directly manipulating objects in the scene. By selecting an object, the 
-                        user can navigate to moments where the object changed. Users can also view the trajectories of objects that changed location and directly
-                         manipulate them to navigate. We evaluated the system with a set of sensemaking questions in a think-aloud study. You can see the video presentation
-                        here: <a href='https://www.youtube.com/watch?v=lp22J8Jfm5k'>ACM CHI20 Honolulu</a>.</p>
-                </div>
-            </div>
+        <hr class="uk-divider-icon">
 
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h3> Wireless Sensor Network for Monitoring Trains</h3>
-                    <img src="img/train-monitoring.jpg" alt="sensor node">
-                    <p>Design and development of wireless sensor network for monitoring the arrival and departure of trains. We deployed the network at one of the stations
-                        to test which sensors are wireless technologies are most appropriate for such monitoring. To hear more about the internet of things projects that I've
-                        worked on please email me as most of them are not to be shared with the public. 
-                    </p>
-                </div>
-            </div>
+        <div>
+        <h3>Publications</h3>
+        <p>
+        Correction of Avatar Hand Movements Supports Learning of a Motor Skill [<a href="https://www.youtube.com/watch?v=56q69GXDPYA">Video</a>, <a href="https://drive.google.com/file/d/1lrK-HJRoIEquaCGsjNEOHZS9L0ve5a_U/view?usp=sharing">Paper</a>]
+        <br>
+        <span class="uk-text-small">Klemen Lilija, Søren Kyllingsbæk, Kasper Hornbæk, IEEE VR 2021</span>
+        </p> 
 
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h3> Shared Avatar VR Experience</h3>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cYJXsUjM0f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>In the everyday world, each of us has a single body. We are born, live and die while experiencing reality from within our body. 
-                        However, in virtual reality, it does not have to be that way. Since we control this new reality, we can put one person into 
-                        multiple bodies, or multiple persons into one body. During the Copenhagen Culture Night 2019, more than hundred people have
-                        experienced sharing an avatar with their partner and working together to roast marshmallows by a relaxing campfire in a forest.
-                        This application was made with Photo's networking framework and Unity's High Definition Render Pipeline.</p>
-                </div>
-            </div>
+        <p>
+        Conducting Unsupervised Virtual Reality User Studies Online [<a href="https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2021.681482/full">Paper</a>]
+        <br>
+        <span class="uk-text-small">Aske Mottelson, Gustav Bøg Petersen, Klemen Lilija, Guido Makransky, Frontiers in Virtual Reality</span>
+        </p> 
 
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h3> PingPaintPunch VR @ Nordic Game Jam 2019</h3>
-                    <img src="img/pingpaintpunch.png" alt="pingpaintpunch screenshot">
-                    <p>A mashup between Pong, painting and punching. This is a collaborative virtual reality game where two players
-                        try to replicate a pixel art by painting and punching a moving canvas. You can see the video <a href="https://youtu.be/ieZAGTxipbs">here</a>. 
-                    </p>
-                </div>
-            </div>
+        <p>
+        Poros: Configurable Proxies for Distant Interactions in VR
+        [<a href="https://www.youtube.com/watch?v=ijurCmalZ3o">Video</a>, <a href="https://henningpohl.net/papers/Pohl2021CHI.pdf">Paper</a>]
+        <br>
+        <span class="uk-text-small">Henning Pohl, Klemen Lilija, Jess McIntosh, Kasper Hornbæk, ACM CHI 2021</span>
+        </p>
 
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h3> Correction of Avatar Hand Movements Supports Learning of a Motor Skill</h3>
-                    <img src="img/correction.png" alt="correction of virtual hand figure">
-                    <p>Learning to move the hands in particular ways is essential in many training and leisure virtual reality applications, yet challenging.
-                        Existing techniques that support learning of motor movement in virtual reality rely on external cues such as arrows showing where to move or transparent hands showing the target movement.
-                        We propose a technique that corrects the avatar's hand movement.
-                        This embeds guidance in the user's avatar, instead of in external cues and minimizes visual distraction.
-                        Through two experiments, we found that such movement guidance improves the short-term retention of the practiced movement.
-                        The paper will be presented in March at the <a href="http://ieeevr.org/2021/">IEEE VR 2021</a> conference. 
-                    </p>
-                </div>
-            </div>
+        <p>
+        Who Put That There? Temporal Navigation of Spatial Recordings by Direct Manipulation [<a href="https://www.youtube.com/watch?v=AAcXxgV5ICU">Video</a>, <a href="https://henningpohl.net/papers/Lilija2020CHI.pdf">Paper</a>]
+        <br>
+        <span class="uk-text-small">Klemen Lilija, Henning Pohl, Kasper Hornbæk, ACM CHI 2020</span>
+        </p>
 
-            <div id="publications" class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h2>Publications</h2>
-                </div>
-            </div>
+        <p>
+        Augmented Reality Views for Occluded Interaction [<a href="https://www.youtube.com/watch?v=m46csLomLqo">Video</a>, <a href="https://henningpohl.net/papers/Lilija2019CHI.pdf">Paper</a>]
+        <br>
+        <span class="uk-text-small">Klemen Lilija, Henning Pohl, Sebastian Boring, Kasper Hornbæk, ACM CHI 2019</span>
+        </p>
 
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h4>Correction of Avatar Hand Movements Supports Learning of a Motor Skill</h4>
-                    <h5>Klemen Lilija, Søren Kyllingsbæk, Kasper Hornbæk, IEEE VR 2021</h5>
-                </div>
-            </div>
+        <p>
+        Influence of Display Transparency on Background Awareness and Task Performance [<a href="https://www.youtube.com/watch?v=OATMC0odHrE">Video</a>, <a href="https://dl.acm.org/doi/pdf/10.1145/2858036.2858453">Paper</a>]
+        <br>
+        <span class="uk-text-small">David Lindlbauer, Klemen Lilija, Robert Walter, Jörg Müller, ACM CHI 2016</span>
+        </p>
+        </div>
 
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h4>Poros: Configurable Proxies for Distant Interactions in VR</h4>
-                    <h5>Henning Pohl, Klemen Lilija, Jess McIntosh, Kasper Hornbæk, ACM CHI 2021</h5>
-                </div>
-            </div>
+        <hr class="uk-divider-icon">
 
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h4>Who Put That There? Temporal Navigation of Spatial Recordings by Direct Manipulation</h4>
-                    <h5>Klemen Lilija, Henning Pohl, Kasper Hornbæk, ACM CHI 2020</h5>
-                </div>
-            </div>
-
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h4>Augmented Reality Views for Occluded Interaction</h4>
-                    <h5>Klemen Lilija, Henning Pohl, Sebastian Boring, Kasper Hornbæk, ACM CHI 2019</h5>
-                </div>
-            </div>
-
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h4>Influence of Display Transparency on Background Awareness and Task Performance</h4>
-                    <h5>David Lindlbauer, Klemen Lilija, Robert Walter, Jörg Müller, ACM CHI 2016</h5>
-                </div>
-            </div>
-
-            <div class="is-row center is-gapless">
-                <div class="is-col card">
-                    <h2>Contact</h2>
-                </div>
-            </div>
-
-            <div id="contact" class="is-row center is-gapless">
-                <div class="is-col card">
-                    <p>You can reach me via klemen.lilija[at]gmail.com</p>
-                </div>
-            </div>
-
-        </main>
-
-        <footer class="footer">
-            
-        </footer>
+        <div class="uk-margin-medium-bottom">
+            <h3>Contact</h3>
+            <p>
+            <a href="mailto:klemen.lilija@gmail.com" class="uk-margin-small-right" uk-icon="mail"></a> klemen.lilija [at] gmail.com
+            <br>
+            <a href="https://www.linkedin.com/in/klemenlilija/" class="uk-margin-small-right" uk-icon="linkedin"></a> linkedin.com/in/klemenlilija/
+            </p>
+        </div>
     </div>
-    <!-- Kube JS (optional if you are using Kube CSS only) -->
-    <script src="js/kube.min.js"></script>
-    <script>
-        $K.init();
-    </script>
 </body>
 </html>
